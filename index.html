@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="200"></canvas>
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="instructions">Press SPACE to jump!</div>
+        </div>
+        <div id="gameOverOverlay" class="game-over-overlay hidden">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p class="final-score">Final Score: <span id="finalScore">0</span></p>
+
+                <div id="nameInputSection">
+                    <label for="playerName">Enter your name:</label>
+                    <input type="text" id="playerName" maxlength="20" placeholder="Your name">
+                    <button id="submitScoreButton" class="submit-button">Submit Score</button>
+                </div>
+
+                <div id="leaderboardSection" class="hidden">
+                    <h3>🏆 Leaderboard</h3>
+                    <div id="leaderboardList" class="leaderboard-list"></div>
+                    <button id="playAgainButton" class="play-again-button">Play Again</button>
+                </div>
+
+                <div id="loadingIndicator" class="loading hidden">
+                    <p>Saving score...</p>
+                </div>
+
+                <div id="errorMessage" class="error-message hidden"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
