@@ -17,7 +17,7 @@ class DinoRunner {
         this.errorMessage = document.getElementById('errorMessage');
 
         // API configuration
-        this.apiBaseUrl = 'http://localhost:3001/api';
+        this.apiBaseUrl = 'https://dino-backend-cxqw.onrender.com/api';
 
         // Game state
         this.gameRunning = true;
